@@ -11,16 +11,10 @@
   body {
     font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
     font-size: 100%;
-  }
-  #status {
-    /* avoid an excessively wide status text */
-    white-space: pre;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    max-width: 400px;
+    background-color: #0000ff; 
   }
 
-  h1 {text-align:center; background-color:#0000ff; color:#ffff00;}
+  h1 {text-align:center; background-color:#0000ff; color:#ffff00; width:150px;} 
 
   </style>
 
@@ -33,10 +27,14 @@
     <script src="popup.js"></script>
   </head>
   <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
     <h1>T2P</h1>
-    <button id="change-mode">Click to toggle mode!</button>
+
+    <form action="">
+      <input type="radio" name="Mode" value="default">Default<br>
+      <input type="radio" name="Mode" value="cat">Cat<br>
+      <input type="radio" name="Mode" value="doge">Doge<br>
+      <input type="radio" name="Mode" value="pitt">Pitt
+    </form>
   </body>
   </html>
 
