@@ -23,7 +23,17 @@
     "persistent": true
   }
 
+<<<<<<< HEAD
   
+=======
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["myscript.js"],
+      "run_at": ["document_end"]
+    }
+  ]
+>>>>>>> origin/master
 
   
 }
