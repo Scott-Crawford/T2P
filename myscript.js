@@ -1,11 +1,7 @@
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    console.log(sender.tab ?
-                "from a content script:" + sender.tab.url :
-                "from the extension");
-    if (request.greeting == "hello")
-      sendResponse({farewell: "goodbye"});
-  });
-window.onload=function(){
-	document.body.innerHTML = document.body.innerHTML.replace(/Commander/g, "k");
+
+function replace(){
+	document.body.innerHTML = document.body.innerHTML.replace(/shit/ig, "<img src='" + chrome.extension.getURL('src/images/doge/1.jpg') + "'><img src='" + chrome.extension.getURL('src/images/doge/2.jpg') + "'><img src='" + chrome.extension.getURL('src/images/doge/3.jpg') + "'><img src='" + chrome.extension.getURL('src/images/doge/4.jpg') + "'>");
+	setTimeout(replace, 500);
 };
+
+replace();

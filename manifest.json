@@ -22,7 +22,49 @@
       "matches": ["<all_urls>"],
       "js": ["jquery-2.2.0.min.js", "myscript.js"]
     }
+  ],
+  
+  "web_accessible_resources": [
+      "src/images/Default/1.jpg"
+      "src/images/Default/2.jpg"
+      "src/images/Default/3.jpg"
+      "src/images/Default/4.jpg"
+      "src/images/Default/5.jpg"
+      "src/images/Default/6.jpg"
+      "src/images/Default/7.jpg"
+      "src/images/Default/8.jpg"
+      "src/images/cat/1.jpg"
+	  "src/images/cat/2.jpg"
+	  "src/images/cat/3.jpg"
+	  "src/images/cat/4.jpg"
+	  "src/images/cat/5.jpg"
+	  "src/images/cat/6.jpg"
+	  "src/images/cat/7.jpg"
+	  "src/images/cat/8.jpg"
+	  "src/images/doge/1.jpg"
+	  "src/images/doge/2.jpg"
+	  "src/images/doge/3.jpg"
+	  "src/images/doge/4.jpg"
+	  "src/images/doge/5.jpg"
+	  "src/images/doge/6.jpg"
+	  "src/images/doge/7.jpg"
+	  "src/images/doge/8.jpg"
+      "src/images/pitt/1.jpg"
+	  "src/images/pitt/2.jpg"
+	  "src/images/pitt/3.jpg"
+	  "src/images/pitt/4.jpg"
+	  "src/images/pitt/5.jpg"
+	  "src/images/pitt/6.jpg"
+	  "src/images/pitt/7.jpg"
+	  "src/images/pitt/8.jpg"
+	  "src/images/pitt/9.jpg"
+	  "src/images/pitt/10.jpg"
+	  "src/images/pitt/11.jpg"
+	  "src/images/pitt/12.jpg"
   ]
+	
+  
+  
 
 
   
