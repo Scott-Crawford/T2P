@@ -1,0 +1,141 @@
+.t2p-replaced {
+  background-size: cover;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+/* Default */
+
+.t2p-replaced.p1 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Default/1.jpg")
+}
+
+.t2p-replaced.p2 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Default/2.jpg")
+}
+
+.t2p-replaced.p3 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Default/3.jpg")
+}
+
+.t2p-replaced.p4 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Default/4.jpg")
+}
+
+.t2p-replaced.p5 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Default/5.jpg")
+}
+
+.t2p-replaced.p6 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Default/6.jpg")
+}
+
+.t2p-replaced.p7 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Default/7.jpg")
+}
+
+.t2p-replaced.p8 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Default/8.jpg")
+}
+
+/* Cat */
+
+body.t2p-cat .t2p-replaced.p1 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Cat/1.jpg")
+}
+
+body.t2p-cat .t2p-replaced.p2 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Cat/2.jpg")
+}
+
+body.t2p-cat .t2p-replaced.p3 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Cat/3.jpg")
+}
+
+body.t2p-cat .t2p-replaced.p4 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Cat/4.jpg")
+}
+
+body.t2p-cat .t2p-replaced.p5 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Cat/5.jpg")
+}
+
+body.t2p-cat .t2p-replaced.p6 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Cat/6.jpg")
+}
+
+body.t2p-cat .t2p-replaced.p7 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Cat/7.jpg")
+}
+
+body.t2p-cat .t2p-replaced.p8 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Cat/8.jpg")
+}
+
+/* Doge */
+
+body.t2p-doge .t2p-replaced.p1 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Doge/1.jpg")
+}
+
+body.t2p-doge .t2p-replaced.p2 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Doge/2.jpg")
+}
+
+body.t2p-doge .t2p-replaced.p3 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Doge/3.jpg")
+}
+
+body.t2p-doge .t2p-replaced.p4 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Doge/4.jpg")
+}
+
+body.t2p-doge .t2p-replaced.p5 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Doge/5.jpg")
+}
+
+body.t2p-doge .t2p-replaced.p6 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Doge/6.jpg")
+}
+
+body.t2p-doge .t2p-replaced.p7 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Doge/7.jpg")
+}
+
+body.t2p-doge .t2p-replaced.p8 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Doge/8.jpg")
+}
+
+/* Pitt */
+
+body.t2p-pitt .t2p-replaced.p1 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Pitt/1.jpg")
+}
+
+body.t2p-pitt .t2p-replaced.p2 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Pitt/2.jpg")
+}
+
+body.t2p-pitt .t2p-replaced.p3 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Pitt/3.jpg")
+}
+
+body.t2p-pitt .t2p-replaced.p4 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Pitt/4.jpg")
+}
+
+body.t2p-pitt .t2p-replaced.p5 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Pitt/5.jpg")
+}
+
+body.t2p-pitt .t2p-replaced.p6 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Pitt/6.jpg")
+}
+
+body.t2p-pitt .t2p-replaced.p7 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Pitt/7.jpg")
+}
+
+body.t2p-pitt .t2p-replaced.p8 {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/src/images/Pitt/8.jpg")
+}

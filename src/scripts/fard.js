@@ -1,4 +1,3 @@
-
 /**
  * findAndReplaceDOMText v 0.4.3
  * @author James Padolsey http://james.padolsey.com
@@ -625,39 +624,3 @@
 	return exposed;
 
 }));
-function replace(){
-	/*var el = document.getElementById('foo');
-	var style = window.getComputedStyle(el, null).getPropertyValue('font-size');
-	var fontSize = parseFloat(style); 
-	// now you have a proper float for the font size (yes, it can be a float, not just an integer)
-	el.style.fontSize = (fontSize + 1) + 'px';
-	
-	document.body.innerHTML = document.body.innerHTML.replace(/shit/ig, "<img src='" + chrome.extension.getURL('src/images/Doge/1.jpg') + "' style=\"width:" + fsize + "\" ><img src='" + chrome.extension.getURL('src/images/Doge/2.jpg') + "' style=\"width:" + fsize + "\" ><img src='" + chrome.extension.getURL('src/images/Doge/3.jpg') + "' style=\"width:" + fsize + "\" ><img src='" + chrome.extension.getURL('src/images/Doge/4.jpg') + "' style=\"width:" + fsize + "\">");*/
-	textNodesUnder(document.body);
-	setTimeout(replace, 500);
-};
-function textNodesUnder(node){
-  for (node=node.firstChild;node;node=node.nextSibling){
-	var fontSize = window.getComputedStyle(node.parentNode, null).getPropertyValue('font-size');
-    if (node.nodeType==3) {
-		findAndReplaceDOMText(
-			node.parentNode,
-			{
-				find: /shit/ig,
-				replace: function(ele) {
-					var spanNode = document.createElement('SPAN');
-					for (var i = 0; i < ele.text.length; i++) {
-						var imgNode = document.createElement('IMG');
-						imgNode.src = chrome.extension.getURL('src/images/Doge/' + (Math.floor(Math.random()*8)+1) + '.jpg');
-						imgNode.style.width = fontSize;
-						spanNode.appendChild(imgNode);
-					}
-					return spanNode;
-				}
-			}
-		);
-	}
-    else textNodesUnder(node);
-  }
-}
-replace();

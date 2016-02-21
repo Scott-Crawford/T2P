@@ -1,65 +1,62 @@
 .default body {
 	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
 	font-size: 100%;
-	background-color: #ffffff; 
+	background-color: #ffffff;
+	color:#000000;
 }
 
 .default h1 {
-	text-align:center; 
-	color:#000000; 
-	width:150px;
-}
-
-.default span {
-	color:#000000; 
+	background-image: url('/src/logo/256.png');
+	background-size: 80px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	width: 150px;
+	color: transparent;
 }
 
 .pitt body {
 	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
 	font-size: 100%;
-	background-color: #0000ff; 
+	background-color: #0f2953;
+	background-image: url('/src/images/pitt.png');
+	background-size: 130px 130px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: #c6b55e;
 }
 
 .pitt h1 {
-	text-align:center; 
-	color:#ffff00; 
+	text-align:center;
 	width:150px;
-}
-
-.pitt span {
-	color:#ffff00; 
 }
 
 .cat body {
 	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
 	font-size: 100%;
-	background: url('/src/images/Cat/1.jpg'); 
+	background: url('/src/images/Cat/1.jpg');
 	background-size: cover;
-
+	color: #ffffff;
+	-webkit-text-stroke: 1px black;
+	font-weight: bold;
 }
 
 .cat h1 {
-	text-align:top; 
-	color: #ffffff;
-    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+	text-align:top;
 	width:150px;
-}
-
-.cat span {
-	color: #ffffff;
-    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
 .doge body {
 	font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 	font-size: 100%;
-	background-color: #0000ff; 
-	background: url('/src/images/Doge/1.jpg'); 
+	background-color: #0000ff;
+	background: url('/src/images/Doge/1.jpg');
 	background-size: cover;
 }
 
 .doge h1 {
-	text-align:left; 
+	text-align:left;
 	width:150px;
 	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
 	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
@@ -76,4 +73,3 @@
 	background-clip: text;
 	width:90px;
 }
-
