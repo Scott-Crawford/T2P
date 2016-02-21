@@ -17,7 +17,7 @@
     border: solid 1px #888;
     display: inline-block;
     vertical-align: middle;
-    margin: 4px 6px;
+    margin: 4px;
 }
 
 #phrase-list .phrase div, #phrase-list .add div {
