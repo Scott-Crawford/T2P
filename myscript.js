@@ -1,3 +1,5 @@
-$("body").children().html(function (index, text) {
-	this.innerHTML = text.replace(/JavaScript/g, "k")
-});
+window.load=function(){
+	$("body").children().html(function (index, text) {
+		this.innerHTML = text.replace(/JavaScript/g, "k")
+	});
+};
