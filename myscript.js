@@ -1,5 +1,11 @@
-window.load=function(){
-	$("body").children().html(function (index, text) {
-		this.innerHTML = text.replace(/JavaScript/g, "k")
-	});
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    console.log(sender.tab ?
+                "from a content script:" + sender.tab.url :
+                "from the extension");
+    if (request.greeting == "hello")
+      sendResponse({farewell: "goodbye"});
+  });
+window.onload=function(){
+	document.body.innerHTML = document.body.innerHTML.replace(/Commander/g, "k");
 };
