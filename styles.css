@@ -33,7 +33,7 @@
 .cat body {
 	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
 	font-size: 100%;
-	background-color: #ffffff; 
+	background-image: 'src/images/Cat/1.jpg'; 
 }
 
 .cat h1 {
