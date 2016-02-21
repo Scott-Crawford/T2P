@@ -1,30 +1,33 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
--->
 <html class="default">
 <head>
   <title>Getting Started Extension's Popup</title>
   <link rel="stylesheet" href="src/styles/popup.css">
-
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
   </head>
   <body>
     <h1><span>T2P</span></h1>
-
-    <form action="">
-      <input type="radio" name="Mode" value="default" onchange="" checked="checked"><span> Default</span><br>
-      <input type="radio" name="Mode" value="cat"  onchange=""><span> Cat</span><br>
-      <input type="radio" name="Mode" value="doge"  onchange=""><span> Doge</span><br>
-      <input type="radio" name="Mode" value="pitt"  onchange=""><span> Pitt</span>
+    <img id="setting-btn" src="src/images/gear.svg"/>
+    <form>
+      <div class="roundedTwo">
+	      <input name="mode" type="radio" value="default" id="check-default" />
+        <span> Default</span>
+	      <label for="check-default"></label>
+      </div>
+      <div class="roundedTwo">
+	      <input name="mode" type="radio" value="cat" id="check-cat" />
+        <span> Cat</span>
+	      <label for="check-cat"></label>
+      </div>
+      <div class="roundedTwo">
+	      <input name="mode" type="radio" value="doge" id="check-doge" />
+        <span> Doge</span>
+	      <label for="check-doge"></label>
+      </div>
+      <div class="roundedTwo">
+	      <input name="mode" type="radio" value="pitt" id="check-pitt" />
+        <span> Pitt</span>
+	      <label for="check-pitt"></label>
+      </div>
     </form>
   </body>
   <script src="src/scripts/popup.js"></script>

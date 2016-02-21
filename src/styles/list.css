@@ -1,0 +1,54 @@
+#phrase-list {
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+#phrase-list .phrase, #phrase-list .add {
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    background: #eee;
+    border-radius: 2px;
+    text-indent: 6px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: solid 1px #888;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px 6px;
+}
+
+#phrase-list .phrase div, #phrase-list .add div {
+    display: block;
+    position: absolute;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    top: 5px;
+    background: #BB2222;
+    text-align: center;
+    text-indent: 0;
+    color: #FFF;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#phrase-list .add input {
+    border: 0;
+    font-size: 18px;
+    position: absolute;
+    height: 22px;
+    padding: 4px;
+    width: 180px;
+    border-radius: 1px;
+    text-indent: 2px;
+    text-transform: uppercase;
+    outline: none!important;
+}
+#phrase-list .add div {
+    font-size: 24px;
+    line-height: 15px;
+    background: #227722;
+}

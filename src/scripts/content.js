@@ -1,13 +1,25 @@
-var mode;
+var mode, pharses, regex;
+
+function escapeRegExp(str) {
+  return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+}
 
 chrome.runtime.sendMessage({command: "init"}, function(response) {
   mode = response.mode;
+  pharses = response.pharses;
+  if (pharses.length) {
+    var regexString = '';
+    for (var i = 0; i < pharses.length; i++) {
+      regexString += escapeRegExp(pharses[i]);
+      if (i != pharses.length - 1) regexString += '|';
+    }
+    regex = new RegExp(regexString, 'ig');
+  }
   document.body.classList.add('t2p-' + mode);
   replace();
 });
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  console.log(request);
   if (request.command == "change-mode") {
     if (request.mode != mode) {
       if (mode == 'pitt' || request.mode == 'pitt') {
@@ -23,14 +35,24 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       document.body.classList.add('t2p-' + request.mode);
       mode = request.mode;
     }
+  } else if (request.command == "update-list") {
+    if (request.phrases.length) {
+      var regexString = '';
+      for (var i = 0; i < request.phrases.length; i++) {
+        regexString += escapeRegExp(request.phrases[i]);
+        if (i != request.phrases.length - 1) regexString += '|';
+      }
+      regex = new RegExp(regexString, 'ig');
+    }
+    phrases = request.phrases;
   }
 });
 
 function replace() {
-  if (document.body) {
+  if (document.body && pharses.length) {
     textNodesUnder(document.body);
   }
-	setTimeout(replace, document.body ? 1000 : 100);
+	setTimeout(replace, document.body ? 10000 : 500);
 };
 
 function textNodesUnder(node){
@@ -40,7 +62,7 @@ function textNodesUnder(node){
 		findAndReplaceDOMText(
 			node.parentNode,
 			{
-				find: /shit/ig,
+				find: regex,
 				replace: function(ele) {
 					var spanNode = document.createElement('SPAN');
 					for (var i = 0; i < ele.text.length; i++) {
