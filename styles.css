@@ -26,14 +26,16 @@
 	width:150px;
 }
 
-.pitt input {
+.pitt form {
 	color:#ffff00; 
 }
 
 .cat body {
 	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
 	font-size: 100%;
-	background-image: 'src/images/Cat/1.jpg'; 
+	background: url('/src/images/Cat/1.jpg'); 
+	background-size: cover;
+
 }
 
 .cat h1 {
@@ -47,17 +49,27 @@
 }
 
 .doge body {
-	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 	font-size: 100%;
 	background-color: #0000ff; 
+	background: url('/src/images/Doge/1.jpg'); 
+	background-size: cover;
 }
 
 .doge h1 {
-	text-align:center; 
-	color:#ffff00; 
+	text-align:left; 
 	width:150px;
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
 }
 
-.doge input {
-	color:#ffff00; 
+.doge form {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
 }
