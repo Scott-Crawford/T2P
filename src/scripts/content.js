@@ -52,12 +52,11 @@ function replace() {
   if (document.body && pharses.length) {
     textNodesUnder(document.body);
   }
-	setTimeout(replace, document.body ? 10000 : 500);
+	setTimeout(replace, document.body ? 2000 : 500);
 };
 
 function textNodesUnder(node){
   for (node=node.firstChild;node;node=node.nextSibling){
-	var fontSize = window.getComputedStyle(node.parentNode, null).getPropertyValue('font-size');
     if (node.nodeType==3) {
 		findAndReplaceDOMText(
 			node.parentNode,
@@ -65,14 +64,18 @@ function textNodesUnder(node){
 				find: regex,
 				replace: function(ele) {
 					var spanNode = document.createElement('SPAN');
+          if (ele.node.parentNode.classList.contains('t2p-replaced')) return ele.text;
 					for (var i = 0; i < ele.text.length; i++) {
+            var fontSize = parseFloat(window.getComputedStyle(ele.node.parentNode, null).getPropertyValue('font-size'));
 						var imgNode = document.createElement('SPAN');
+            imgNode.textContent = ele.text.charAt(i);
             imgNode.dataset.index = i;
-						imgNode.style.width = imgNode.style.height = parseFloat(fontSize) * 1.2 + 'px';
+            imgNode.style.width = fontSize * 0.6 + 'px';
+						imgNode.style.height = fontSize * 1 + 'px';
             imgNode.classList.add('t2p-replaced');
             var imgId = mode == 'pitt' && i < 4 ? (i + 1) :
               (Math.floor(Math.random() * 8) + 1);
-            imgNode.classList.add('p' + imgId);
+            imgNode.classList.add('t2p-p' + imgId);
 						spanNode.appendChild(imgNode);
 					}
 					return spanNode;
